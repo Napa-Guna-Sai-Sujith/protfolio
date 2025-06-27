@@ -38,9 +38,20 @@
       border-bottom: 2px solid #30363d;
       padding-bottom: 0.5rem;
     }
-    ul {
-      list-style: none;
-      margin: 1rem 0;
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .skill-btn {
+      background-color: #21262d;
+      color: #58a6ff;
+      border: 1px solid #30363d;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      cursor: default;
     }
     a {
       color: #58a6ff;
@@ -48,6 +59,46 @@
     }
     .socials a {
       margin-right: 1rem;
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      background-color: #21262d;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+    .socials a:hover {
+      background-color: #30363d;
+    }
+    .project-card {
+      border: 1px solid #30363d;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    #contact {
+      background: linear-gradient(135deg, #161b22, #0d1117);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid #30363d;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    #contact h2 {
+      color: #58a6ff;
+      margin-bottom: 1rem;
+      border: none;
+    }
+    #contact a {
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #21262d;
+      color: #58a6ff;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+    #contact a:hover {
+      background-color: #30363d;
     }
   </style>
 </head>
@@ -60,54 +111,52 @@
 
   <section>
     <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS, JavaScript, Bootstrap</li>
-      <li>Python, C, C++, Java</li>
-      <li>SQL</li>
-      <li>Web Development</li>
-    </ul>
+    <div class="skills">
+      <span class="skill-btn">HTML</span>
+      <span class="skill-btn">CSS</span>
+      <span class="skill-btn">JavaScript</span>
+      <span class="skill-btn">Bootstrap</span>
+      <span class="skill-btn">Python</span>
+      <span class="skill-btn">C</span>
+      <span class="skill-btn">C++</span>
+      <span class="skill-btn">Java</span>
+      <span class="skill-btn">SQL</span>
+      <span class="skill-btn">Web Development</span>
+    </div>
   </section>
 
   <section>
     <h2>Projects</h2>
     <div style="display: grid; gap: 1rem; margin-top: 1rem;">
-
-
-      <div style="border: 1px solid #30363d; padding: 1rem; border-radius: 10px;">
+      <div class="project-card">
+        <h3 style="color: #58a6ff;">Library Management System</h3>
+        <p>A digital system to manage books and students using Python and SQL.</p>
+        <a href="Library_Management_System.zip" download>📦 Download ZIP</a>
+      </div>
+      <div class="project-card">
+        <h3 style="color: #58a6ff;">Student Management System</h3>
+        <p>A student record manager built with database concepts (DBMS Mini Project).</p>
+        <a href="dbms mini.zip" download>📦 Download ZIP</a>
+      </div>
+      <div class="project-card">
+        <h3 style="color: #58a6ff;">Online Voting System</h3>
+        <p>Flask-based secure voting app to manage elections online.</p>
+        <a href="online voting.zip" download>📦 Download ZIP</a>
+      </div>
+      <div class="project-card">
         <h3 style="color: #58a6ff;">RAG with SQL</h3>
         <p>A Retrieval-Augmented Generation system integrated with SQL database for intelligent querying.</p>
         <a href="#" style="color: #8b949e;">GitHub link coming soon</a>
       </div>
-
-      <div style="border: 1px solid #30363d; padding: 1rem; border-radius: 10px;">
-      <h3 style="color: #58a6ff;">Library Management System</h3>
-      <p>A digital system to manage books and students using Python and SQL.</p>
-      <a href="Library_Management_System.zip" download>📦 Download ZIP</a>
-    </div>
-    
-    <div style="border: 1px solid #30363d; padding: 1rem; border-radius: 10px;">
-      <h3 style="color: #58a6ff;">Student Management System</h3>
-      <p>A student record manager built with database concepts (DBMS Mini Project).</p>
-      <a href="dbms mini.zip" download>📦 Download ZIP</a>
-    </div>
-    
-    <div style="border: 1px solid #30363d; padding: 1rem; border-radius: 10px;">
-      <h3 style="color: #58a6ff;">Online Voting System</h3>
-      <p>Flask-based secure voting app to manage elections online.</p>
-      <a href="online voting.zip" download>📦 Download ZIP</a>
-    </div>
-
-
-      <div style="border: 1px solid #30363d; padding: 1rem; border-radius: 10px;">
+      <div class="project-card">
         <h3 style="color: #58a6ff;">Chatbot using SQL</h3>
         <p>A simple chatbot integrated with a database to answer user queries based on stored knowledge.</p>
         <a href="#" style="color: #8b949e;">GitHub link coming soon</a>
       </div>
-
     </div>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Connect With Me</h2>
     <div class="socials">
       <a href="https://github.com/Napa-Guna-Sai-Sujith/Napa-Guna-Sai-Sujith" target="_blank">GitHub</a>
